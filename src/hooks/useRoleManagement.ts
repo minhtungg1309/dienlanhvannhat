@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Role, CreateRoleRequest } from '../types/role';
-import { createRole, getRoles, deleteRole } from '../services/roleService';
+import { createRole, getRoles, deleteRole } from '../services/admin/roleService';
 import toast from 'react-hot-toast';
 
 export const useRoleManagement = () => {

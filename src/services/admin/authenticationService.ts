@@ -1,8 +1,9 @@
-import { getToken, removeToken, setToken } from "./localStorageService";
-import httpClient from "../configurations/httpClient";
-import { API } from "../configurations/configuration";
-import { LoginRequest, LoginResponse } from "../types/auth";
-import { handleApiError } from "../utils/apiHelpers";
+// ...existing code from authenticationService.ts...
+import { getToken, removeToken, setToken } from "../localStorageService";
+import httpClient from "../../configurations/httpClient";
+import { API } from "../../configurations/configuration";
+import { LoginRequest, LoginResponse } from "../../types/auth";
+import { handleApiError } from "../../utils/apiHelpers";
 
 /**
  * Service xử lý authentication

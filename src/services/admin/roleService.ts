@@ -1,7 +1,8 @@
-import httpClient from "../configurations/httpClient";
-import { API } from "../configurations/configuration";
-import { Role, CreateRoleRequest } from "../types/role";
-import { handleApiResponse, createUrl, handleApiError } from "../utils/apiHelpers";
+// ...existing code from roleService.ts...
+import httpClient from "../../configurations/httpClient";
+import { API } from "../../configurations/configuration";
+import { Role, CreateRoleRequest } from "../../types/role";
+import { handleApiResponse, createUrl, handleApiError } from "../../utils/apiHelpers";
 
 /**
  * Service xử lý role operations
@@ -51,4 +52,4 @@ export class RoleService {
 // Export các function để tương thích ngược
 export const createRole = RoleService.create;
 export const getRoles = RoleService.getAll;
-export const deleteRole = RoleService.delete; 
+export const deleteRole = RoleService.delete;

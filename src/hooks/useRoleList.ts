@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Role } from '../types/role';
-import { getRoles } from '../services/roleService';
+import { getRoles } from '../services/admin/roleService';
 
 export const useRoleList = () => {
   const [roles, setRoles] = useState<Role[]>([]);

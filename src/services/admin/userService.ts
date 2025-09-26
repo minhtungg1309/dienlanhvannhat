@@ -1,7 +1,8 @@
-import httpClient from "../configurations/httpClient";
-import { API } from "../configurations/configuration";
-import { User, CreateUserRequest, UpdateUserRequest } from "../types/user";
-import { handleApiResponse, createUrl, handleApiError } from "../utils/apiHelpers";
+// ...existing code from userService.ts...
+import httpClient from "../../configurations/httpClient";
+import { API } from "../../configurations/configuration";
+import { User, CreateUserRequest, UpdateUserRequest } from "../../types/user";
+import { handleApiResponse, createUrl, handleApiError } from "../../utils/apiHelpers";
 
 /**
  * Service xử lý user operations

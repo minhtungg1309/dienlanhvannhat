@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Permission } from '../types/permission';
-import { getPermissions } from '../services/permissionService';
+import { getPermissions } from '../services/admin/permissionService';
 
 export const usePermissionList = () => {
   const [permissions, setPermissions] = useState<Permission[]>([]);

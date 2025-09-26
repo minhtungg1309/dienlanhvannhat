@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Permission, CreatePermissionRequest } from '../types/permission';
-import { createPermission, getPermissions, deletePermission } from '../services/permissionService';
+import { createPermission, getPermissions, deletePermission } from '../services/admin/permissionService';
 import toast from 'react-hot-toast';
 
 export const usePermissionManagement = () => {

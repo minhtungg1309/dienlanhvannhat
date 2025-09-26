@@ -7,6 +7,7 @@ import {
   HorizontaLDots,
   UserCircleIcon,
   PlugInIcon,
+  ChatIcon,
 } from "../icons";
 import { useSidebar } from "../context/SidebarContext";
 
@@ -19,20 +20,23 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
- 
   {
-    icon: <UserCircleIcon />,
-    name: "User Profile",
-    path: "/",
-    
+    icon: <UserCircleIcon />, 
+    name: "Dashboard",
+    path: "/admin",
   },
   {
     icon: <PlugInIcon />,
     name: "Authorization",
     subItems: [
-      { name: "Role", path: "/role", pro: false },
-      { name: "Permission", path: "/permission", pro: false },
+      { name: "Role", path: "/admin/role", pro: false },
+      { name: "Permission", path: "/admin/permission", pro: false },
     ],
+  },
+  {
+    icon: <ChatIcon />,
+    name: "Trò chuyện",
+    path: "/admin/chat",
   },
 ];
 

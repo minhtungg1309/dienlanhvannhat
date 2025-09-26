@@ -1,7 +1,8 @@
-import httpClient from "../configurations/httpClient";
-import { API } from "../configurations/configuration";
-import { Permission, CreatePermissionRequest } from "../types/permission";
-import { handleApiResponse, createUrl, handleApiError } from "../utils/apiHelpers";
+// ...existing code from permissionService.ts...
+import httpClient from "../../configurations/httpClient";
+import { API } from "../../configurations/configuration";
+import { Permission, CreatePermissionRequest } from "../../types/permission";
+import { handleApiResponse, createUrl, handleApiError } from "../../utils/apiHelpers";
 
 /**
  * Service xử lý permission operations
@@ -51,4 +52,4 @@ export class PermissionService {
 // Export các function để tương thích ngược
 export const createPermission = PermissionService.create;
 export const getPermissions = PermissionService.getAll;
-export const deletePermission = PermissionService.delete; 
+export const deletePermission = PermissionService.delete;

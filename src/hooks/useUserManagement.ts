@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { User, CreateUserRequest, UpdateUserRequest } from '../types/user';
-import { createUser, getUsers, deleteUser, updateUser } from '../services/userService';
+import { createUser, getUsers, deleteUser, updateUser } from '../services/admin/userService';
 import toast from 'react-hot-toast';
 
 export const useUserManagement = () => {
