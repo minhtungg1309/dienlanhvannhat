@@ -3,6 +3,7 @@
   "private": true,
   "version": "2.0.2",
   "type": "module",
+  "homepage": "https://minhtungg1309.github.io/dienlanhvannhat/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
